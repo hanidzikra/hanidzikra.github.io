@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<script type="text/javascript">
+	function validateForm() {
+		var a = document.forms["myForm"]["fname"].value;
+		var b = document.forms["myForm"]["fage"].value;
+		var c = document.forms["myForm"]["fphone"].value;
+		var d = document.forms["myForm"]["femail"].value;
+		var e = document.forms["myForm"]["jenis_kelamin"].value;
+
+		alert("Welcome to Irise Community! \nName: "+a+" ("+e+") \nAge: "+b+" years old \nPhone: "+c+" \nE-mail: "+d);
+	} 
+	</script>
+	<style type="text/css">
+		.navbar{
+			width:100%;
+			height: 45px;
+			position: fixed;
+			top:0px;
+			left:0px;
+			background-color: transparent;
+		}
+		.logo{
+			color:#ac7339;
+			font-size: 35px;
+			font-family: caramella;
+			margin-top: 5px;
+			margin-left: 25px;
+			font-style: italic;
+			float: left;
+		}
+		.menu{
+			float: right;
+			position: fixed;
+			float: right;
+			right: 50px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color:#290001;
+			font-size: 18px;
+			padding: 10px;
+		}
+		ul li a:hover{
+			color:#290001;
+			background-color:#d9b38c;
+			position: relative;
+		} 
+		.footer{
+			width: 100%;
+			height: 80px;
+			bottom: 0px;
+			left: 0px;
+			background-color: #e6ccb3;
+			position: absolute;
+			overflow: hidden;
+			text-align: center;
+		} 
+		.footer p{
+			margin-top: 30px;
+			color:black;
+		}
+		body{
+			background-color: #f9f2ec;
+		}
+		.regis{
+			width: 30%; 
+			height: 350px;
+			margin: 20px auto; 
+			background-color: rgba(230,204,179,0.8); 
+			margin-top: 90px;
+			padding: 50px;
+			line-height: 5px;
+		}
+		h1{
+			text-align: center;
+			font-style: italic;
+			padding-bottom: 15px;
+			color: #290001;
+		}
+		#field{
+			width: 280px;
+			padding: 10px; 
+			border: 1px solid black; 
+			border-radius: 3px;
+			align
+		}
+		#bttn_sub{
+			width: 300px; 
+			padding: 5px;
+			border: 1px solid black;
+			background-color: #d2a679;
+			color: black;
+			font-size: 18px;
+			border-radius: 3px;
+			margin-top: 20px;
+		}
+		#bttn_sub:hover{
+			background-color: #dfbf9f;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">Irise</div>
+		<div class="menu">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Registration.html">Registration</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="regis" align="center">
+		<h1><b>Registration</b></h1>
+		<form name="myForm" onsubmit="return validateForm()" method="post">
+			<input type="text" name="fname" placeholder="Name" id="field"><br><br>
+			<input type="text" name="fage" placeholder="Age" id="field"><br><br>
+			<input type="text" name="fphone" placeholder="Phone" id="field"><br><br>
+			<input type="email" name="femail" placeholder="E-mail" id="field"><br><br>
+			<input type="password" name="fpassword" placeholder="Password" id="field"><br><br>
+			<input type="radio" name="jenis_kelamin" value="Male">Male
+   			<input type="radio" name="jenis_kelamin" value="Female">Female
+   			<br>
+			<button type="Submit" id="bttn_sub">Register</button>
+		</form>
+	</div>
+	<div class="footer">
+		<p>Copyright &copy; 2020 All Rights Reserved by Hani Dzikra</p></div>
+	</div>
+</body>
+</html>
